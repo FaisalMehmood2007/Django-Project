@@ -1,16 +1,21 @@
 
-{% comment %} {% extends "master.html" %} {% endcomment %}
 
+{% load static %}
+<html>
+<link rel= "stylesheet" href= "{% static 'myglobal.css' %}">
+<body>
 
-{% if greeting == 1 %}
-  <h1>Hi<br>Have A Good Day</h1>
-{% endif %} 
-<ul>
+    {% if greeting == 1 %}
+      <h1>Hi<br>Have A Good Day</h1>
+    {% endif %} 
+  <ul>
   {% for x in mymembers %}
     <li>{{ x.firstname }}</li>
   {% endfor %}
-</ul>
-{% include 'footer.html' %}
+  </ul>
+     {% include 'footer.html' %}
+</body>
+</html>
 
 
 

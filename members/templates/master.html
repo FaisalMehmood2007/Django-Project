@@ -1,8 +1,9 @@
 
-{% comment %} {% extends "master.html" %} {% endcomment %}
+{% load static %}
 
 <!DOCTYPE html>
 <html>
+<link rel= "stylesheet" href= "{% static 'myglobal.css' %}">
 <head>
   <title>{% block title %}{% endblock %}</title>
 </head>
